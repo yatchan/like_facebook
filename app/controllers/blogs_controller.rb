@@ -29,7 +29,7 @@ class BlogsController < ApplicationController
   end
 
   def update
-    # edit, update, destroyで共通コード
+  # edit, update, destroyで共通コード
   #  @blog = Blog.find(params[:id])
 
     if @blog.update(blogs_params)
@@ -38,6 +38,7 @@ class BlogsController < ApplicationController
       render 'edit'
     end
   end
+
   def destroy
   #  edit, update, destroyで共通コード
   #  @blog = Blog.find(params[:id])
