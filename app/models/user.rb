@@ -50,7 +50,6 @@ class User < ActiveRecord::Base
   def self.create_unique_string
     SecureRandom.uuid
   end
-
   def update_with_password(params, *options)
     if provider.blank?
       super
@@ -59,18 +58,13 @@ class User < ActiveRecord::Base
       update_without_password(params, *options)
     end
   end
-
-def follow!(other_user)
-  relationships.create!(followed_id: other_user.id)
-end
-
-def following?(other_user)
-  relationships.find_by(followed_id: other_user.id)
-end
-
-def unfollow!(other_user)
-  relationships.find_by(followed_id: other_user.id).destroy
-end
-
-
+  def follow!(other_user)
+    relationships.create!(followed_id: other_user.id)
+  end
+  def following?(other_user)
+    relationships.find_by(followed_id: other_user.id)
+  end
+  def unfollow!(other_user)
+    relationships.find_by(followed_id: other_user.id).destroy
+  end
 end

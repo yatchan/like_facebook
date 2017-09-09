@@ -24,7 +24,7 @@ Rails.application.routes.draw do
   root 'top#index'
 
   resources :poems ,only: [:index, :show]
-  resources :users, only: [:index]
+  resources :users, only: [:index, :show]
   resources :relationships, only: [:create, :destroy]
 
   if Rails.env.development?
