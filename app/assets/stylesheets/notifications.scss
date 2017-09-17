@@ -1,3 +1,24 @@
-// Place all the styles related to the notifications controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+table.oshirase_table {
+    text-align: center;
+    border: solid 1px #999999;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table.oshirase_table th {
+    text-align: center;
+    border-bottom: solid 1px #999999;
+    border-left: dotted 1px #999999;
+    border-collapse: collapse;
+}
+
+table.oshirase_table td {
+    text-align: center;
+    border: dotted 1px #999999;
+    border-collapse: collapse;
+}
+
+h2  {
+  text-align: center;
+}
+
