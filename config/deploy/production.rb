@@ -7,7 +7,7 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 server '13.115.46.249', user: 'app', roles: %w{app db web}
-set :ssh_options, keys: 'C:\Users\achieve\.ssh\id_rsa'
+set :ssh_options, keys: '/home/ubuntu/workspace/achieve/.ssh/id_rsa'
 
 
 
