@@ -22,11 +22,9 @@
 </div>
 
 <%= form_for [@conversation, @message], html: {class: "ui reply form"} do |f| %>
-  <div class="field">
+  <div class="field col-md-4 col-md-offset-4 col-sm-10">
     <%= f.text_area :body, class: "form-control" %>
-  </div>
     <%= f.text_field :user_id, value: current_user.id, type: "hidden"  %>
-  <div>
     <%= f.submit "メッセージを送る" %>
   </div>
 
