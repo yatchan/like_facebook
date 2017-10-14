@@ -2,7 +2,7 @@ ja:
   activerecord:
     models:
       blog: "ブログ"
-      contact: "お問い合わせ"
+      contact: "連絡する"
       user: "ユーザー"
     attributes:
       blog:

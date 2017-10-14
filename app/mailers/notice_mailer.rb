@@ -9,13 +9,13 @@ class NoticeMailer < ApplicationMailer
    @blog = blog
 
    mail to: "dive154@dc1.test154.etius.jp",
-    subject: '【Achieve】ブログが投稿されました'
+    subject: '投稿されました'
   end
 
   def sendmail_contact(contact)
     @contact = contact
 
    mail to: @contact.email,
-   subject: '【Achieve】コンタクトが投稿されました'
+   subject: '投稿されました'
   end
 end
